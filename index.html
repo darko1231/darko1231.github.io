@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order form for computer components</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="form_head">
+          <h1 class="form_heading">Order Form</h1>
+        </div>
+        <form id="form">
+          <div class="form_box">
+            <div class="form_element">
+              <label for="firstname">First name</label>
+              <input
+                required
+                autocomplete="on"
+                class="first_name input"
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="First name"
+              />
+            </div>
+            <div class="form_element">
+              <label for="lastname">Last name</label>
+              <input
+                required
+                autocomplete="on"
+                class="last_name input"
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Last name"
+              />
+            </div>
+            <div class="form_element">
+              <label for="email">Email</label>
+              <input
+                required
+                autocomplete="on"
+                class="email input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+              />
+            </div>
+            <div class="form_element">
+              <label for="number">Phone number</label>
+              <input
+                required
+                autocomplete="on"
+                class="phone_number input"
+                type="number"
+                name="number"
+                id="number"
+                placeholder="Your phone number"
+              />
+            </div>
+            <div class="form_element">
+              <label for="component">Which component do you want to buy?</label>
+              <select name="component" id="component">
+                <option value="10500">CPU - Intel i7 3200 TX</option>
+                <option value="10500">CPU - Intel i3 2500</option>
+                <option value="5000">CPU - AMD Athlon II</option>
+                <option value="4000">CPU - Intel i5 3500</option>
+                <option value="1500">RAM - Corsair 32gb</option>
+                <option value="1200">RAM - Crucial Pro 16gb</option>
+                <option value="1000">RAM - Corsair Vengeance 64gb</option>
+                <option value="4144">RAM - Corsair WD 64gb</option>
+                <option value="9000">GPU - AMD Radeon rx 7900</option>
+                <option value="5000">GPU - Nvidia GeForce rtxx 4090</option>
+                <option value="5600">GPU - Nvidia GeForce rx 2050</option>
+                <option value="2500">Motherboard - Maxsun a520</option>
+                <option value="1525">Motherboard - Asus Rog b550</option>
+                <option value="1364">Motherboard - GIGABYTE b650</option>
+                <option value="1672">Motherboard - GIGABYTE b650</option>
+                <option value="15511">Hard Drive - WD 10TB 3.5</option>
+                <option value="1433">Hard Drive - TOSHIBA 4TB 3.5</option>
+                <option value="1555">Hard Drive - SEAGATE WOLF 1TB</option>
+                <option value="15515">Hard Drive - WD 6TB 4.1</option>
+              </select>
+            </div>
+            <div class="button">
+              <button type="submit" class="btn">Place Order</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
